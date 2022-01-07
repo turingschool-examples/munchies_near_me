@@ -21,7 +21,7 @@ RSpec.describe 'Yelp business search API' do
     expect(response[:businesses].count).to eq(15)
     expect(response[:businesses]).to be_an Array
     expect(response[:businesses][0]).to have_key :name
-    expect(response[:businesses][0]).to have_key :phone
+    expect(response[:businesses][0]).to have_key :display_phone
     expect(response[:businesses][0]).to have_key :rating
     expect(response[:businesses][0]).to have_key :location
     expect(response[:businesses][0][:location]).to have_key :display_address
