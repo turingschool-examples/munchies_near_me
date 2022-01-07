@@ -1,0 +1,22 @@
+<h1>Search Result: 15 nearest restaurants</h1>
+
+
+<% @restaurants.each do |restaurant| %>
+  <section class="restaurant">
+    <p class="name">
+    Restaurant Name: <%= restaurant.name %>
+    </p>
+    <p class="phone">
+    Phone Number: <%= restaurant.phone_number %>
+    </p>
+    <p class="rating">
+    Rating: <%= restaurant.rating %>
+    </p>
+    <p class="address">
+    Address: <%= restaurant.address %>
+    </p>
+    <p class="distance">
+    Distance: <%= MapquestFacade.get_distance(@city, restaurant.address) %><br><br>
+    </p>
+  </section>
+<% end %>
