@@ -9,7 +9,7 @@ class Restaurant
 
   def initialize(data, craving)
     @name           = data[:name]
-    @phone          = data[:phone][2..-1]
+    @phone          = data[:display_phone]
     @rating         = data[:rating]
     @street_address = data[:location][:display_address][0]
     @city_state_zip = data[:location][:display_address][1]
@@ -21,6 +21,6 @@ class Restaurant
 
   def find_distance
     @distance = MapQuestService.new(@lat, @long)
-    
+
   end
 end
