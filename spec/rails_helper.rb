@@ -1,4 +1,9 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+require 'simplecov'
+SimpleCov.start
+
+require 'webmock/rspec'
+
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
@@ -61,4 +66,66 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+end
+
+VCR.configure do |config|
+    config.allow_http_connections_when_no_cassette = true
+    config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+    config.hook_into :webmock
+    config.filter_sensitive_data("Hide My Key") { ENV["govt_api_key"] }  #if you want to hide the key in the cassete
+    config.configure_rspec_metadata!  #it will name the cassette automatically under the folder of spec test name, with folder named with the test name.
+end
+
+def restaurants_data_for_test
+  {:businesses=>
+   [{:id=>"R3kOhjqh7PTm9grePAjV9Q",
+     :alias=>"denver-fresh-mex-denver",
+     :name=>"Denver Fresh Mex",
+     :image_url=>"https://s3-media3.fl.yelpcdn.com/bphoto/izU2T6-zNcOekbM3gmOWqQ/o.jpg",
+     :is_closed=>false,
+     :url=>
+      "https://www.yelp.com/biz/denver-fresh-mex-denver?adjust_creative=JoHUBEwUZjNEV3_yf4zE9g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JoHUBEwUZjNEV3_yf4zE9g",
+     :review_count=>57,
+     :categories=>[{:alias=>"mexican", :title=>"Mexican"}],
+     :rating=>4.0,
+     :coordinates=>{:latitude=>39.739751, :longitude=>-104.968226},
+     :transactions=>["delivery", "pickup"],
+     :price=>"$",
+     :location=>
+      {:address1=>"1600 E Colfax Ave",
+       :address2=>"",
+       :address3=>"",
+       :city=>"Denver",
+       :zip_code=>"80218",
+       :country=>"US",
+       :state=>"CO",
+       :display_address=>["1600 E Colfax Ave", "Denver, CO 80218"]},
+     :phone=>"+17204209955",
+     :display_phone=>"(720) 420-9955",
+     :distance=>500.7109784474234},
+    {:id=>"2-J4F7aKX5O1CzODEMPxAg",
+     :alias=>"las-margs-denver",
+     :name=>"Las Margs",
+     :image_url=>"https://s3-media1.fl.yelpcdn.com/bphoto/bYyAlVYfWz7ZAcIigCYBGw/o.jpg",
+     :is_closed=>false,
+     :url=>
+      "https://www.yelp.com/biz/las-margs-denver?adjust_creative=JoHUBEwUZjNEV3_yf4zE9g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JoHUBEwUZjNEV3_yf4zE9g",
+     :review_count=>564,
+     :categories=>[{:alias=>"bars", :title=>"Bars"}, {:alias=>"mexican", :title=>"Mexican"}],
+     :rating=>4.0,
+     :coordinates=>{:latitude=>39.74051, :longitude=>-104.97249},
+     :transactions=>["pickup", "delivery"],
+     :price=>"$",
+     :location=>
+      {:address1=>"1521 Marion St",
+       :address2=>nil,
+       :address3=>"",
+       :city=>"Denver",
+       :zip_code=>"80218",
+       :country=>"US",
+       :state=>"CO",
+       :display_address=>["1521 Marion St", "Denver, CO 80218"]},
+     :phone=>"+17203612137",
+     :display_phone=>"(720) 361-2137",
+     :distance=>591.3268032436563}]}
 end
