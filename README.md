@@ -8,7 +8,7 @@ Rails 5.2.6
 
 ### Set Up
 
-- Clone this repo
+- Fork and clone this repo
 - `bundle install`
 - `bundle exec figaro install`
 - `rails db:create`
