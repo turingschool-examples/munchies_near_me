@@ -1,9 +1,9 @@
 <h1>Search Results:</h1>
 
 <% @restaurants.each do |r| %>
-  <h4><%= r.name %><br></h4>
+  <h4><%= r.name %></h4>
   Phone: <%= r.phone %><br>
   Rating: <%= r.rating %><br>
   Address: <%= r.address %><br>
-  Distance: <%= r.distance %><br>
+  Distance: <%= r.distance.round(1) %> miles<hr>
 <% end %>

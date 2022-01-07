@@ -6,7 +6,7 @@ RSpec.describe Restaurant do
       name: 'Denver Pizza Co.',
       phone: '555-555-5555',
       rating: '4.9',
-      display_address: ['123 Pizza Street'],
+      location: { display_address: ['123 Pizza Street'] },
       map_distance: '0.5'
     )
   end

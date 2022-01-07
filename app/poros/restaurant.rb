@@ -9,7 +9,7 @@ class Restaurant
     @name     = data[:name]
     @phone    = data[:phone]
     @rating   = data[:rating]
-    @address  = data[:display_address][0] if data[:display_address]
+    @address  = data[:location][:display_address].flatten[0] if data[:location][:display_address]
     @distance = data[:map_distance]
   end
 end
