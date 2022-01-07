@@ -4,7 +4,7 @@ class YelpFacade
       params = {term: craving, location: city, sort_by: "distance", limit: "15"}
 
       restaurant_data = YelpService.get_restaurants(params)
-require "pry"; binding.pry
+
       # fos_data[:fos].first(10).map do |fo_data|
       #   Fo.new(fo_data)
       # end
