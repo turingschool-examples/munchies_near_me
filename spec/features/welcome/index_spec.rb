@@ -16,6 +16,7 @@ RSpec.describe 'Root Page' do
     fill_in :craving, with: 'fries'
     click_button "Search For Restaurants"
 
-    expect(current_path).to be('/search')
+    expect(current_path).to eq('/search')
+    expect(page).to have_content('Closest Cravings!')
   end
 end
