@@ -1,0 +1,26 @@
+require 'rails_helper'
+
+
+describe 'Search Results', type: :feature do
+  before do
+    visit '/'
+  end
+
+  it 'shows can search' do
+    fill_in "Enter City/State (ex: Denver, CO)", with: 'Denver'
+    fill_in "What are you craving?", with: 'pizza'
+
+    click_button 'Search For Restaurants'
+
+    expect(current_path).to eq(search_path)
+  end
+
+  it ''
+end
+
+# As a visitor
+# When I visit “/“
+# And fill in the existing form with a city (ex: “Denver, CO”) and my food craving (ex: thai, american, bar, chinese, etc.) and hit submit,
+# I’m taken to a page where I can see a list of the 15 closest restuarants for that craving in that city. 
+# And each restaurant lists their name, phone number, rating, human readable address, and the distance it is from that city. 
+# And the restaurants are listed in order of proximity (closest to furthest)
