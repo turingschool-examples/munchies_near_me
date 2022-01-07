@@ -18,6 +18,15 @@ When you navigate to localhost:3000, you should see a form to fill out a city an
 
 You will be searching for the nearest businesses in that particular city, that offer the food that you’re craving. 
 
+## APIs you'll use
+
+1. The MapQuest Directions API:
+    * endpoint: http://www.mapquestapi.com/directions/v2/route (see docs on this endpoint here https://developer.mapquest.com/documentation/directions-api/route/get/ )
+    * Sign up for a key here: https://developer.mapquest.com/
+2. Yelp Fusion API
+    * endpoint: https://www.yelp.com/developers/documentation/v3/business_search
+    * sign up for a key here - https://www.yelp.com/developers/documentation/v3/get_started
+
 ## Story 
 
 ```
