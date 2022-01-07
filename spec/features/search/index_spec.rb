@@ -9,12 +9,18 @@ require 'rails_helper'
 
 RSpec.describe 'Search Results Page' do
   before :each do
+    @restaurants = CravingFacade.restaurants("Las Vegas", "fries")
+    @first_restaurant = @restaurants.first
     visit '/'
     fill_in :city, with: 'Las Vegas'
     fill_in :craving, with: 'fries'
     click_button 'Search For Restaurants'
   end
+
   it 'lists the restaurants that fit the craving' do
-    expect(page).to have_content("Restaurants Near You with fries!")
+    expect(page).to have_content("Restaurants Near You with #{@first_restaurant.craving}!")
+    expect(page).to have_content("Name: #{@first_restaurant.name}")
+    expect(page).to have_content("Yelp Rating: #{@first_restaurant.rating}")
+    expect(page).to have_content("Name: #{@restaurants.second.name}")
   end
 end
