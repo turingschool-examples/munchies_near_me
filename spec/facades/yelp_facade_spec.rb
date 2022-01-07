@@ -7,9 +7,9 @@ RSpec.describe 'Yelp Facade' do
 
     expect(restaurants.count).to eq 15
     expect(restaurant).to be_a Restaurant
-    expect(restaurant.name).to eq("Mali Thai Cuisine")
-    expect(restaurant.display_phone).to eq("(303) 773-6254")
+    expect(restaurant.name).to eq("Jing")
+    expect(restaurant.display_phone).to eq("(303) 779-6888")
     expect(restaurant.rating).to eq(4.0)
-    expect(restaurant.display_address).to eq("4955 S Ulster St, Ste 104, Denver, CO 80237")
+    expect(restaurant.display_address).to eq("5370 Greenwood Plz Blvd, Greenwood Village, CO 80111")
   end
 end
