@@ -8,7 +8,6 @@ RSpec.describe "", type: :feature do
       fill_in :craving, with: "mexican"
       click_on "Search For Restaurants"
       expect(current_path).to eq("/search")
-      require "pry"; binding.pry
     end
 
     it "returns 15 closest restaurants" do

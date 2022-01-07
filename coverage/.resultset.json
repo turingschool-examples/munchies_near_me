@@ -268,8 +268,34 @@
           1,
           null
         ]
+      },
+      "/Users/haewonjeon/right_now_Turing/practices/munchies_near_me/app/controllers/search_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/haewonjeon/right_now_Turing/practices/munchies_near_me/app/facades/yelp_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1641591822
+    "timestamp": 1641592689
   }
 }
