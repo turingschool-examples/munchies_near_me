@@ -24,7 +24,7 @@ You will be searching for the nearest restaurants in that particular city, that 
     * endpoint: http://www.mapquestapi.com/directions/v2/route (see docs on this endpoint here https://developer.mapquest.com/documentation/directions-api/route/get/ )
     * Sign up for a key here: https://developer.mapquest.com/
 2. Yelp Fusion API
-    * endpoint: https://www.yelp.com/developers/documentation/v3/business_search
+    * endpoint: https://api.yelp.com/v3/businesses/search ( see docs on this endpoint here https://www.yelp.com/developers/documentation/v3/business_search)
     * sign up for a key here - https://www.yelp.com/developers/documentation/v3/get_started
 
 ## Story 
