@@ -94,3 +94,67 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+def restaurant_data
+  {:id=>"R3kOhjqh7PTm9grePAjV9Q",
+    :alias=>"denver-fresh-mex-denver",
+    :name=>"Denver Fresh Mex",
+    :image_url=>"https://s3-media3.fl.yelpcdn.com/bphoto/izU2T6-zNcOekbM3gmOWqQ/o.jpg",
+    :is_closed=>false,
+    :url=>"https://www.yelp.com/biz/denver-fresh-mex-denver?adjust_creative=01_XL2q6kojxgP8UGaNYPw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=01_XL2q6kojxgP8UGaNYPw",
+    :review_count=>57,
+    :categories=>[{:alias=>"mexican", :title=>"Mexican"}],
+    :rating=>4.0,
+    :coordinates=>{:latitude=>39.739751, :longitude=>-104.968226},
+    :transactions=>["delivery", "pickup"],
+    :price=>"$",
+    :location=>{:address1=>"1600 E Colfax Ave", :address2=>"", :address3=>"", :city=>"Denver", :zip_code=>"80218", :country=>"US", :state=>"CO", :display_address=>["1600 E Colfax Ave", "Denver, CO 80218"]},
+    :phone=>"+17204209955",
+    :display_phone=>"(720) 420-9955",
+    :distance=>500.7109784474234}
+end
+
+def direction_data
+  {:allToAll=>false,
+ :distance=>[0, 0.732],
+ :locations=>
+  [{:dragPoint=>false,
+    :displayLatLng=>{:lng=>-104.984703, :lat=>39.739154},
+    :adminArea4=>"Denver County",
+    :adminArea5=>"Denver",
+    :postalCode=>"",
+    :adminArea1=>"US",
+    :adminArea3=>"CO",
+    :type=>"s",
+    :sideOfStreet=>"N",
+    :geocodeQualityCode=>"A5XAX",
+    :adminArea4Type=>"County",
+    :linkId=>0,
+    :street=>"",
+    :adminArea5Type=>"City",
+    :geocodeQuality=>"CITY",
+    :adminArea1Type=>"Country",
+    :adminArea3Type=>"State",
+    :latLng=>{:lng=>-104.984703, :lat=>39.739154}},
+   {:dragPoint=>false,
+    :displayLatLng=>{:lng=>-104.973021, :lat=>39.740016},
+    :adminArea4=>"Denver County",
+    :adminArea5=>"Denver",
+    :postalCode=>"80218",
+    :adminArea1=>"US",
+    :adminArea3=>"CO",
+    :type=>"s",
+    :sideOfStreet=>"N",
+    :geocodeQualityCode=>"B1XAA",
+    :adminArea4Type=>"County",
+    :linkId=>0,
+    :street=>"East Colfax Avenue",
+    :adminArea5Type=>"City",
+    :geocodeQuality=>"STREET",
+    :adminArea1Type=>"Country",
+    :adminArea3Type=>"State",
+    :latLng=>{:lng=>-104.973021, :lat=>39.740016}}],
+ :time=>[0, 137],
+ :manyToOne=>false,
+ :info=>{:statuscode=>0, :copyright=>{:imageAltText=>"© 2021 MapQuest, Inc.", :imageUrl=>"http://api.mqcdn.com/res/mqlogo.gif", :text=>"© 2021 MapQuest, Inc."}, :messages=>[]}}
+end
