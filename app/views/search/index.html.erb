@@ -13,7 +13,10 @@
     Rating: <%= restaurant.rating %>
     </p>
     <p class="address">
-    Address: <%= restaurant.address %><br><br>
+    Address: <%= restaurant.address %>
+    </p>
+    <p class="distance">
+    Distance: <%= MapquestFacade.get_distance(@city, restaurant.address) %><br><br>
     </p>
   </section>
 <% end %>

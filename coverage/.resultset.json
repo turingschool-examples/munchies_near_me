@@ -274,6 +274,7 @@
           1,
           1,
           3,
+          3,
           null,
           null
         ]
@@ -334,8 +335,52 @@
           null,
           null
         ]
+      },
+      "/Users/haewonjeon/right_now_Turing/practices/munchies_near_me/app/facades/mapquest_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          45,
+          null,
+          45,
+          45,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/haewonjeon/right_now_Turing/practices/munchies_near_me/app/services/mapquest_service.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          45,
+          45,
+          45,
+          45,
+          null,
+          null,
+          45,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          45,
+          null,
+          null,
+          1,
+          45,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1641594961
+    "timestamp": 1641596284
   }
 }

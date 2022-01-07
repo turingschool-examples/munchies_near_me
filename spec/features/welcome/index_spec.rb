@@ -26,6 +26,9 @@ RSpec.describe "", type: :feature do
     end
 
     it "returns distance from the restaurant to the city" do
+      within(first('.restaurant')) do
+        expect(page).to have_css('.distance')
+      end
     end
   end
 end
