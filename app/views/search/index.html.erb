@@ -1,0 +1,12 @@
+<h1>Restaurants:</h1>
+<% @facade.restaurants.each_with_index do |restaurant, index| %>
+  <div id="restaurant-<%=index %>">
+    <h3><%= restaurant.name %><br></h3>
+    <ul>
+      <li>Phone Number: <%= restaurant.phone %></li>
+      <li>Address: <%= restaurant.address %></li>
+      <li>Rating: <%= restaurant.rating %></li>
+      <li>Distance: <%= restaurant.miles_away %> miles</li>
+    </ul>
+  </div>
+<% end %>
