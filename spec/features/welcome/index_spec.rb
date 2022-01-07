@@ -11,9 +11,18 @@ RSpec.describe "", type: :feature do
     end
 
     it "returns 15 closest restaurants" do
+      expect(page).to have_content("Search Result")
+      expect(page).to have_css(".restaurant", count: 15)
     end
 
     it "returns name, phone number, rating, and human-readable address" do
+      within(first('.restaurant')) do
+        expect(page).to have_css('.name')
+        expect(page).to have_css('.phone')
+        expect(page).to have_css('.rating')
+        expect(page).to have_css('.address')
+        expect(page).to have_content("1600 E Colfax Ave, Denver, CO 80218")
+      end
     end
 
     it "returns distance from the restaurant to the city" do
