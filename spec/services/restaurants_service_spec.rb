@@ -12,7 +12,7 @@ RSpec.describe RestaurantsService do
 
     expect(results).to be_a Hash
     expect(results).to have_key :businesses
-    expect(results[:businesses].length).to eq 50
+    expect(results[:businesses].length).to eq 25
     expect(results[:businesses][0]).to have_key :name
     expect(results[:businesses][0][:name]).to eq "Brooklyn's Finest Pizza - Lowell"
   end
