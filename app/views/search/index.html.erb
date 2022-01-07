@@ -5,5 +5,10 @@
   Phone: <%= r.phone %><br>
   Rating: <%= r.rating %><br>
   Address: <%= r.address %><br>
-  Distance: <%= r.distance.round(1) %> miles<hr>
+  Distance:
+  <% if r.distance %>
+    <%= r.distance.round(1) %> miles
+  <% else %>
+    (not available)
+  <% end %><hr>
 <% end %>
