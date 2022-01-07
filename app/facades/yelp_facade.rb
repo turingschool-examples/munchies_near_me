@@ -1,9 +1,13 @@
 class YelpFacade
   def self.restaurants(address, q)
-    restaurants = YelpService.restaurants(address, q)[:businesses]
+    restaurants_data = YelpService.restaurants(address, q)[:businesses][0..14]
 
-    restaurants.map do |restaurant_data|
+    restaurants = restaurants_data.map do |restaurant_data|
       Restaurant.new(restaurant_data)
     end
+
+    restaurants.each do |restaurant|
+      restaurant.distance = MapquestFacade.distance(address, restaurant.display_address)
+    end.sort_by(&:distance)
   end
 end
