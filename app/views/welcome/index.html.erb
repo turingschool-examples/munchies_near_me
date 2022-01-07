@@ -1,0 +1,16 @@
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <p class ="navbar-brand">Munchies</p>
+      <p class="subtitle">Search For Businesses in Your Area</p>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <%= form_tag(search_path, method: "get") do %>
+        <%= text_field_tag(:city, nil, placeholder: "Enter City/State (ex: Denver, CO)")%>
+        <%= text_field_tag(:craving, nil, placeholder: "What are you craving?")%>
+        <%= submit_tag('Search For Businesses', class: "button") %>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
