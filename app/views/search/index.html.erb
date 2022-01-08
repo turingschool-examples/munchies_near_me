@@ -1,0 +1,8 @@
+<h1>Results</h1>
+<% @restaurants.each do |restaurant| %>
+  Name: <%= restaurant.name %><br>
+  Distance: <%= restaurant.distance %><br>
+  Rating: <%= restaurant.rating %><br>
+  Address: <%= restaurant.address %><br>
+  Phone Number: <%= restaurant.phone %><hr>
+<% end %>
