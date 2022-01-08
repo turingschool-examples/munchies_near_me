@@ -2,12 +2,12 @@
 
 <h3>Restaurants Near You with <%=  @restaurants.first.craving %>!</h3>
 <hr>
-<% @restaurants.each do |rest| %>
+<% @restaurants[0..14].each do |rest| %>
     <p>Name: <%= rest.name %>
     Yelp Rating: <%= rest.rating %></p>
     <p>Phone #: <%= rest.phone %></p>
     <p>Street Address: <%= rest.street_address %><br>
      City, State, Zip: <%= rest.city_state_zip %></p>
-    <p>Distance from you: <%= rest.distance %></p>
+    <p>Distance from you: <%= rest.distance %> mi</p>
   <hr>
 <% end %>

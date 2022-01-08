@@ -3,6 +3,6 @@ class CravingFacade
     restaurants = CravingService.find_restaurants(city, craving)
     restaurants[:businesses].map do |restaurant|
       Restaurant.new(restaurant, craving, city)
-    end[0..14]
+    end
   end
 end
