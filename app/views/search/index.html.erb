@@ -1,0 +1,13 @@
+<h1>Closest Cravings!</h1>
+
+<h3>Restaurants Near You with <%=  @restaurants.first.craving %>!</h3>
+<hr>
+<% @restaurants[0..14].each do |rest| %>
+    <p>Name: <%= rest.name %></p>
+    <p>Yelp Rating: <%= rest.rating %></p>
+    <p>Phone #: <%= rest.phone %></p>
+    <p>Street Address: <%= rest.street_address %><br>
+     City, State, Zip: <%= rest.city_state_zip %></p>
+    <p>Distance from you: <%= rest.distance %> mi</p>
+  <hr>
+<% end %>
