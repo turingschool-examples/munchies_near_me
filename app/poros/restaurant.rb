@@ -7,7 +7,7 @@ class Restaurant
               :distance,
               :craving
 
-  def initialize(data, craving)
+  def initialize(data, craving, city)
     @name           = data[:name]
     @phone          = data[:display_phone]
     @rating         = data[:rating]
@@ -16,11 +16,12 @@ class Restaurant
     @lat            = data[:coordinates][:latitude]
     @long           = data[:coordinates][:longitude]
     @craving        = craving
-    @distance       = nil
+    @city           = city
+    @distance       = find_distance
   end
 
   def find_distance
-    @distance = MapQuestService.new(@lat, @long)
-
+    service = MapquestService.get_distance(@city, @lat, @long)
+    service[:route][:distance]
   end
 end
