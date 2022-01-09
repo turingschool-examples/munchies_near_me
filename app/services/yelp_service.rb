@@ -4,9 +4,10 @@ class YelpService < BaseService
       f.headers['Authorization'] = "Bearer #{ENV['yelp_api_key']}"
       f.params['location'] = "#{city}"
       f.params['term'] = "#{craving}"
+      f.params['sort_by'] = "distance"
     end
 
     format_json(response)
-    
+
   end
 end

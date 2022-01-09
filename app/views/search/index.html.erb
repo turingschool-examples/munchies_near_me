@@ -1,0 +1,10 @@
+<h1>Restaurant List:</h1>
+<br>
+<% @restaurant_list.each do |restaurant| %>
+  <h2>Name: <%= restaurant.name %></h2>
+  <p>Phone Number: <%= restaurant.phone_number %></p>
+  <p>Rating: <%= restaurant.rating %></p>
+  <p>Address: <%= restaurant.address %></p>
+  <p>Distance: <%= restaurant.distance %> miles</p>
+<% end %>
+<br>

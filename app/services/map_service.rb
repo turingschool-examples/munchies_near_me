@@ -14,13 +14,13 @@ class MapService
 
 
 end
-# class DirectionService < BaseService
+# class MapService < BaseService
 #
-#   def self.navigate(start, finish)
+#   def self.get_distance(from, to)
 #     response = conn('http://www.mapquestapi.com').get("/directions/v2/route") do |f|
-#       f.params['key'] = ENV['map_key']
-#       f.params['from'] = start
-#       f.params['to'] = finish
+#       f.params['key'] = ENV['mapquest_api_key']
+#       f.params['from'] = "#{from}"
+#       f.params['to'] = "#{to}"
 #     end
 #     format_json(response)
 #   end
