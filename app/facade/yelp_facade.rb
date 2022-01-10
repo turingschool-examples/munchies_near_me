@@ -4,6 +4,10 @@ class YelpFacade
     restaurants = YelpService.all_results(location, craving)
     restaurants.map do |restaurant|
       Restaurant.new(restaurant)
-    end
+    end[0..14]
+  end
+
+  def self.distance(origin, destination)
+    MapService.distance(origin, destination)
   end
 end

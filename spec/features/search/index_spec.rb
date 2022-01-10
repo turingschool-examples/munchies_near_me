@@ -13,7 +13,6 @@ describe 'Search Results', type: :feature do
     click_button 'Search For Restaurants'
 
     expect(current_path).to eq(search_path)
-    save_and_open_page
     
     expect(page).to have_content("Hops & Pie")
     expect(page).to have_content("3920 Tennyson St Denver, CO 80212")
