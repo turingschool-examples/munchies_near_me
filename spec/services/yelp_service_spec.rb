@@ -5,7 +5,5 @@ require 'rails_helper'
      city = 'Denver, CO'
      craving = 'chinese'
      json = YelpService.get_service(craving, city)
-
-     require "pry"; binding.pry
    end
  end

@@ -29,31 +29,31 @@ http_interactions:
       X-B3-Sampled:
       - '0'
       X-Routing-Service:
-      - routing-main--uswest2-b478b4d87-6p6mx; site=public_api_v3
+      - routing-main--uswest2-b478b4d87-ljtm4; site=public_api_v3
+      X-Zipkin-Id:
+      - d829021525b9429e
       Server:
       - envoy
       Ratelimit-Dailylimit:
       - '5000'
       Ratelimit-Remaining:
-      - '4997'
-      X-Zipkin-Id:
-      - f168a093eada3cf0
+      - '4994'
       X-Cloudmap:
       - routing_uswest2
       X-Proxied:
-      - 10-69-184-36-uswest2bprod
+      - 10-69-69-73-uswest2aprod
       X-Extlb:
-      - 10-69-184-36-uswest2bprod
+      - 10-69-69-73-uswest2aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 10 Jan 2022 01:45:45 GMT
+      - Mon, 10 Jan 2022 04:34:44 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8274-DEN
+      - cache-den8268-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -98,7 +98,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/phelps-hog-heaven-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
         "review_count": 16, "categories": [{"alias": "bbq", "title": "Barbeque"}],
         "rating": 3.0, "coordinates": {"latitude": 37.03285, "longitude": -95.62242},
-        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
         "511 W 11th St", "address2": "", "address3": "", "city": "Coffeyville", "zip_code":
         "67337", "country": "US", "state": "KS", "display_address": ["511 W 11th St",
         "Coffeyville, KS 67337"]}, "phone": "+16206886360", "display_phone": "(620)
@@ -109,7 +109,7 @@ http_interactions:
         "review_count": 4, "categories": [{"alias": "foodtrucks", "title": "Food Trucks"},
         {"alias": "japanese", "title": "Japanese"}], "rating": 5.0, "coordinates":
         {"latitude": 37.0361160440196, "longitude": -95.6397058606229}, "transactions":
-        ["delivery", "pickup"], "location": {"address1": "1415 W 8th St", "address2":
+        ["pickup", "delivery"], "location": {"address1": "1415 W 8th St", "address2":
         "", "address3": null, "city": "Coffeyville", "zip_code": "67337", "country":
         "US", "state": "KS", "display_address": ["1415 W 8th St", "Coffeyville, KS
         67337"]}, "phone": "+16202039407", "display_phone": "(620) 203-9407", "distance":
@@ -261,5 +261,5 @@ http_interactions:
         St", "Coffeyville, KS 67337"]}, "phone": "+16206052083", "display_phone":
         "(620) 605-2083", "distance": 1521.7741369835294}], "total": 29, "region":
         {"center": {"longitude": -95.6301498413086, "latitude": 37.03269542117694}}}'
-  recorded_at: Mon, 10 Jan 2022 01:45:45 GMT
+  recorded_at: Mon, 10 Jan 2022 04:34:44 GMT
 recorded_with: VCR 6.0.0
