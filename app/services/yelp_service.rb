@@ -6,7 +6,8 @@ class YelpService
     # end
 
     def business_search(location, category)
-      parse_data(conn.get("/v3/businesses/search?limit=15&term=restaurants&categories=#{category}&sort_by=distance&location=#{location}"))
+      # parse_data(conn.get("/v3/businesses/search?limit=15&term=restaurants&categories=#{category}&sort_by=distance&location=#{location}"))
+      parse_data(conn.get("/v3/businesses/search?limit=15&term=restaurants&categories=#{category}&location=#{location}"))
     end
 
     def conn

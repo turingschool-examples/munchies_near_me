@@ -10,13 +10,11 @@ class Restaurant
     @name = info[:name]
     @phone = info[:display_phone]
     @rating = info[:rating]
-    @address = info[:location][:display_address]
-    @distance = info[:distance]
+    @address = info[:display_address]
+    @distance = info[:mq_distance]
   end
 
   def address
     @address.join(", ")
-
   end
-
 end

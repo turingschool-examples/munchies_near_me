@@ -30,7 +30,7 @@ RSpec.describe 'Search Facade' do
     location = "denver, co"
     category = "thai"
 
-    # restuarant = SearchFacade.restaurant(location, category)
-    # expect(restuarant).to be_a Restaurant
+    restaurant = SearchFacade.restaurants(location, category)
+    expect(restaurant.first).to be_a Restaurant
   end
 end

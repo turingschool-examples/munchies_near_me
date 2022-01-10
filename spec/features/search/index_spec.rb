@@ -9,6 +9,7 @@ RSpec.describe 'Restaurant Search' do
   end
 
   it 'redirects to results page' do
+    require "pry"; binding.pry
     expect(current_path).to eq(search_path)
     expect(page).to have_content("Results from your search will appear below!")
   end
