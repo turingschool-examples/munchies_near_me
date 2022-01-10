@@ -1,0 +1,4 @@
+<% Restaurant.sort_by_distance(@results).each do |restaurant| %>
+  <%= restaurant.name %><br>
+  <% require 'pry'; binding.pry %>
+<% end %>
