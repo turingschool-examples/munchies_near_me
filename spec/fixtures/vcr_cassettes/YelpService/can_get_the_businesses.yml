@@ -1,0 +1,265 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?categories=Denver,%20CO&location=chinese
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Authorization:
+      - Bearer jGtOUGX64FxHcnLyjScifyGqn_pwqj_tF-TSjWOSRe6UxL6HJVYy_v09SdZFhwaYJiUGBbuErMh1SWtcXIXiQVRceOePcJJp-CmrqaRFIzdELmoJgi_YZYpMcH_bYXYx
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2022-01-11T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--uswest2-b478b4d87-6p6mx; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4997'
+      X-Zipkin-Id:
+      - f168a093eada3cf0
+      X-Cloudmap:
+      - routing_uswest2
+      X-Proxied:
+      - 10-69-184-36-uswest2bprod
+      X-Extlb:
+      - 10-69-184-36-uswest2bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 10 Jan 2022 01:45:45 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8274-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "1ZACfh-FZH6M_fWiB2dFow", "alias": "lannings-downtown-grill-coffeyville-2",
+        "name": "Lanning''s Downtown Grill", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/lq44Sz6X3VVealB4kFJLIw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lannings-downtown-grill-coffeyville-2?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 64, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.0349, "longitude": -95.61576},
+        "transactions": [], "price": "$$", "location": {"address1": "111 W 9th St",
+        "address2": "", "address3": "", "city": "Coffeyville", "zip_code": "67337",
+        "country": "US", "state": "KS", "display_address": ["111 W 9th St", "Coffeyville,
+        KS 67337"]}, "phone": "+16202518255", "display_phone": "(620) 251-8255", "distance":
+        1263.9066455961695}, {"id": "cK2z6W4vmZVdIX88S1nOtg", "alias": "el-pueblito-mexican-restaurant-coffeyville",
+        "name": "El Pueblito Mexican Restaurant", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/mkCsIeKZuE5ZiTnwLkmB9A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/el-pueblito-mexican-restaurant-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 37, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.0378861, "longitude": -95.5987},
+        "transactions": [], "price": "$", "location": {"address1": "600 Northeast
+        St", "address2": "", "address3": "", "city": "Coffeyville", "zip_code": "67337",
+        "country": "US", "state": "KS", "display_address": ["600 Northeast St", "Coffeyville,
+        KS 67337"]}, "phone": "+16202511618", "display_phone": "(620) 251-1618", "distance":
+        2850.621644147735}, {"id": "euEn7hgVwUvrZZIzt8SGkA", "alias": "donut-palace-coffeyville",
+        "name": "Donut Palace", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/b-P18cs5qD443mSssLKQSw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/donut-palace-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 4, "categories": [{"alias": "donuts", "title": "Donuts"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}], "rating": 5.0,
+        "coordinates": {"latitude": 37.0328688576292, "longitude": -95.6209284875144},
+        "transactions": [], "location": {"address1": "403 W 11th St", "address2":
+        "", "address3": null, "city": "Coffeyville", "zip_code": "67337", "country":
+        "US", "state": "KS", "display_address": ["403 W 11th St", "Coffeyville, KS
+        67337"]}, "phone": "+16209485111", "display_phone": "(620) 948-5111", "distance":
+        818.7681469059074}, {"id": "mIgs3S7gYXan8ysDWtLHEg", "alias": "phelps-hog-heaven-coffeyville",
+        "name": "Phelp''s Hog Heaven", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/t0ISwBa2twyLkDDhT9ruSw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/phelps-hog-heaven-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 16, "categories": [{"alias": "bbq", "title": "Barbeque"}],
+        "rating": 3.0, "coordinates": {"latitude": 37.03285, "longitude": -95.62242},
+        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "511 W 11th St", "address2": "", "address3": "", "city": "Coffeyville", "zip_code":
+        "67337", "country": "US", "state": "KS", "display_address": ["511 W 11th St",
+        "Coffeyville, KS 67337"]}, "phone": "+16206886360", "display_phone": "(620)
+        688-6360", "distance": 583.515544864743}, {"id": "odWtYK3aEFPTAhjGswvnyA",
+        "alias": "gen-teppa-yaki-coffeyville", "name": "Gen Teppa Yaki", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/oF8J6FlmFItI7dERS0QdEA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/gen-teppa-yaki-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 4, "categories": [{"alias": "foodtrucks", "title": "Food Trucks"},
+        {"alias": "japanese", "title": "Japanese"}], "rating": 5.0, "coordinates":
+        {"latitude": 37.0361160440196, "longitude": -95.6397058606229}, "transactions":
+        ["delivery", "pickup"], "location": {"address1": "1415 W 8th St", "address2":
+        "", "address3": null, "city": "Coffeyville", "zip_code": "67337", "country":
+        "US", "state": "KS", "display_address": ["1415 W 8th St", "Coffeyville, KS
+        67337"]}, "phone": "+16202039407", "display_phone": "(620) 203-9407", "distance":
+        929.6041877404791}, {"id": "x-hNGkHha2UNoz0p8ja9kg", "alias": "eggberts-15-coffeyville",
+        "name": "Eggbert''s #15", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IZbeTvOvQLrPuLvIeQxAjg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/eggberts-15-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 11, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}],
+        "rating": 3.5, "coordinates": {"latitude": 37.0329028031902, "longitude":
+        -95.6180230358015}, "transactions": [], "price": "$", "location": {"address1":
+        "1505 W 11th St", "address2": "", "address3": null, "city": "Coffeyville",
+        "zip_code": "67337", "country": "US", "state": "KS", "display_address": ["1505
+        W 11th St", "Coffeyville, KS 67337"]}, "phone": "+16202516100", "display_phone":
+        "(620) 251-6100", "distance": 1076.6925118829427}, {"id": "-QVgQxbcIkRn6m_fPyPTHg",
+        "alias": "pizza-hut-coffeyville", "name": "Pizza Hut", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/XqM5ANGz8dipDx2nau-dSQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pizza-hut-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 10, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "chicken_wings", "title": "Chicken Wings"}, {"alias": "hotdogs", "title":
+        "Fast Food"}], "rating": 3.0, "coordinates": {"latitude": 37.0341025886063,
+        "longitude": -95.6421393}, "transactions": [], "price": "$", "location": {"address1":
+        "1612 W 11th St", "address2": "", "address3": "", "city": "Coffeyville", "zip_code":
+        "67337", "country": "US", "state": "KS", "display_address": ["1612 W 11th
+        St", "Coffeyville, KS 67337"]}, "phone": "+16202514520", "display_phone":
+        "(620) 251-4520", "distance": 1075.686349219893}, {"id": "4cmt2PkinfAHOZfC1ZthEw",
+        "alias": "terebinth-coffee-house-and-roastery-coffeyville", "name": "Terebinth
+        Coffee House & Roastery", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qeiqak0QTxrxL0jGG6eYVA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/terebinth-coffee-house-and-roastery-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 2, "categories": [{"alias": "coffeeroasteries", "title": "Coffee
+        Roasteries"}], "rating": 5.0, "coordinates": {"latitude": 37.035236, "longitude":
+        -95.618778}, "transactions": [], "location": {"address1": "232 W 9th", "address2":
+        null, "address3": null, "city": "Coffeyville", "zip_code": "67337", "country":
+        "US", "state": "KS", "display_address": ["232 W 9th", "Coffeyville, KS 67337"]},
+        "phone": "+19133473615", "display_phone": "(913) 347-3615", "distance": 1048.200600938815},
+        {"id": "qr-nAI6pqcwcG7uE6NBsdA", "alias": "hong-kong-delight-coffeyville",
+        "name": "Hong Kong Delight", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Ntu48x0b9HuDsnOmSz9qAg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/hong-kong-delight-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 8, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 3.0, "coordinates": {"latitude": 37.032643, "longitude": -95.630144},
+        "transactions": [], "price": "$", "location": {"address1": "915 W 11th St",
+        "address2": "", "address3": "", "city": "Coffeyville", "zip_code": "67337",
+        "country": "US", "state": "KS", "display_address": ["915 W 11th St", "Coffeyville,
+        KS 67337"]}, "phone": "+16202512394", "display_phone": "(620) 251-2394", "distance":
+        5.851978746038265}, {"id": "LxWu9PjWBF5DEkA_4gPaSw", "alias": "sonic-drive-in-coffeyville",
+        "name": "Sonic Drive-In", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/nZhp_Jr2eX8MmzzYCDyPHA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sonic-drive-in-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 15, "categories": [{"alias": "icecream", "title": "Ice Cream
+        & Frozen Yogurt"}, {"alias": "hotdogs", "title": "Fast Food"}, {"alias": "burgers",
+        "title": "Burgers"}], "rating": 3.0, "coordinates": {"latitude": 37.0333465,
+        "longitude": -95.6278263}, "transactions": [], "price": "$$", "location":
+        {"address1": "802 W 11th St", "address2": "", "address3": "", "city": "Coffeyville",
+        "zip_code": "67337", "country": "US", "state": "KS", "display_address": ["802
+        W 11th St", "Coffeyville, KS 67337"]}, "phone": "+16202514460", "display_phone":
+        "(620) 251-4460", "distance": 218.58748608167}, {"id": "-WfLYhGcO1NmEH2GIttwHQ",
+        "alias": "rosss-bbq-restaurant-coffeyville", "name": "Ross''s Bbq Restaurant",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/YOokfaxikp9D9M9zKD7RNg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rosss-bbq-restaurant-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 7, "categories": [{"alias": "bbq", "title": "Barbeque"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.0362, "longitude": -95.61203},
+        "transactions": [], "price": "$", "location": {"address1": "304 E 8th St",
+        "address2": null, "address3": null, "city": "Coffeyville", "zip_code": "67337",
+        "country": "US", "state": "KS", "display_address": ["304 E 8th St", "Coffeyville,
+        KS 67337"]}, "phone": "+16202514490", "display_phone": "(620) 251-4490", "distance":
+        1654.6291160368921}, {"id": "4_xdiKauuYSWxMWfhXr2oQ", "alias": "el-charro-coffeyville",
+        "name": "El charro", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BOUddX7Sw2zLqM0FBcUrqA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/el-charro-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 10, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 3.0, "coordinates": {"latitude": 37.032782, "longitude": -95.620188},
+        "transactions": [], "location": {"address1": "311 W 11th St", "address2":
+        null, "address3": "", "city": "Coffeyville", "zip_code": "67337", "country":
+        "US", "state": "KS", "display_address": ["311 W 11th St", "Coffeyville, KS
+        67337"]}, "phone": "+16209485030", "display_phone": "(620) 948-5030", "distance":
+        884.3238815585852}, {"id": "jlrLLRJ1Nx4Jy7cUvNMJgQ", "alias": "dalton-defenders-museum-coffeyville",
+        "name": "Dalton Defenders Museum", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mTT5Rgmy1lTElG2TacdehA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dalton-defenders-museum-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 5, "categories": [{"alias": "museums", "title": "Museums"}],
+        "rating": 3.5, "coordinates": {"latitude": 37.03591763592117, "longitude":
+        -95.6145616052221}, "transactions": [], "location": {"address1": "814 South
+        Walnut Street", "address2": "", "address3": "", "city": "Coffeyville", "zip_code":
+        "67337", "country": "US", "state": "KS", "display_address": ["814 South Walnut
+        Street", "Coffeyville, KS 67337"]}, "phone": "+16202515944", "display_phone":
+        "(620) 251-5944", "distance": 1429.3110173215339}, {"id": "i6jJ8vA0_UmF98-DNMfcOw",
+        "alias": "mcdonalds-coffeyville", "name": "McDonald''s", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Sctm4-KlPTffZDlaKbsa0A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mcdonalds-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 24, "categories": [{"alias": "burgers", "title": "Burgers"},
+        {"alias": "hotdogs", "title": "Fast Food"}, {"alias": "coffee", "title": "Coffee
+        & Tea"}], "rating": 2.0, "coordinates": {"latitude": 37.03334, "longitude":
+        -95.6195}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "302 W 11th", "address2": "", "address3": "", "city": "Coffeyville", "zip_code":
+        "67337", "country": "US", "state": "KS", "display_address": ["302 W 11th",
+        "Coffeyville, KS 67337"]}, "phone": "+16202513330", "display_phone": "(620)
+        251-3330", "distance": 950.3983311384308}, {"id": "O47iiboR0BDFbIHI6fUY6g",
+        "alias": "subway-coffeyville-2", "name": "Subway", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/ExknwYv7gkrubi7Hl8FZLw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/subway-coffeyville-2?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 6, "categories": [{"alias": "sandwiches", "title": "Sandwiches"}],
+        "rating": 2.5, "coordinates": {"latitude": 37.0334483792815, "longitude":
+        -95.6292647178554}, "transactions": [], "price": "$", "location": {"address1":
+        "902 W 11th St", "address2": "", "address3": "", "city": "Coffeyville", "zip_code":
+        "67337", "country": "US", "state": "KS", "display_address": ["902 W 11th St",
+        "Coffeyville, KS 67337"]}, "phone": "+16202510011", "display_phone": "(620)
+        251-0011", "distance": 114.81670069238776}, {"id": "vVfbFcMTdTcY866KmQB5Cw",
+        "alias": "arbys-coffeyville", "name": "Arby''s", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/OJJBl7mFYd_5lLCAGmaY1A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/arbys-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 6, "categories": [{"alias": "hotdogs", "title": "Fast Food"},
+        {"alias": "sandwiches", "title": "Sandwiches"}], "rating": 2.5, "coordinates":
+        {"latitude": 37.03268, "longitude": -95.62271}, "transactions": [], "price":
+        "$", "location": {"address1": "501 W 11th St", "address2": "", "address3":
+        "", "city": "Coffeyville", "zip_code": "67337", "country": "US", "state":
+        "KS", "display_address": ["501 W 11th St", "Coffeyville, KS 67337"]}, "phone":
+        "+16202514304", "display_phone": "(620) 251-4304", "distance": 656.4207905300666},
+        {"id": "JFmmdCCt3RDplwXF6BwCHQ", "alias": "kfc-coffeyville", "name": "KFC",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_ebeAbgCDHnCqb50DouFLA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kfc-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 21, "categories": [{"alias": "hotdogs", "title": "Fast Food"},
+        {"alias": "chicken_wings", "title": "Chicken Wings"}, {"alias": "chickenshop",
+        "title": "Chicken Shop"}], "rating": 2.0, "coordinates": {"latitude": 37.032661352967295,
+        "longitude": -95.618804}, "transactions": ["pickup"], "price": "$", "location":
+        {"address1": "215 W 11th St", "address2": "", "address3": "", "city": "Coffeyville",
+        "zip_code": "67337", "country": "US", "state": "KS", "display_address": ["215
+        W 11th St", "Coffeyville, KS 67337"]}, "phone": "+16202511934", "display_phone":
+        "(620) 251-1934", "distance": 1007.1313614511328}, {"id": "fG5pxldp1crBc27tuWdgmQ",
+        "alias": "nortwest-open-space-coffeyville", "name": "Nortwest Open Space",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/uZmCPO3VoRJBScqEXYSxwQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/nortwest-open-space-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 1, "categories": [{"alias": "parks", "title": "Parks"}], "rating":
+        5.0, "coordinates": {"latitude": 37.03280056834623, "longitude": -95.62591505321373},
+        "transactions": [], "location": {"address1": "705 W 11th St", "address2":
+        "", "address3": null, "city": "Coffeyville", "zip_code": "67337", "country":
+        "US", "state": "KS", "display_address": ["705 W 11th St", "Coffeyville, KS
+        67337"]}, "phone": "", "display_phone": "", "distance": 376.08637196725874},
+        {"id": "xZBybuxfsDOTy1FOP5xoig", "alias": "zone-the-coffeyville", "name":
+        "The Zone", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8JlgqoEXOgS25SJjTTN3BQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/zone-the-coffeyville?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 4, "categories": [{"alias": "sportsbars", "title": "Sports
+        Bars"}], "rating": 3.5, "coordinates": {"latitude": 37.049985, "longitude":
+        -95.65144}, "transactions": [], "price": "$", "location": {"address1": "2300
+        Woodland Ave", "address2": "", "address3": "", "city": "Coffeyville", "zip_code":
+        "67337", "country": "US", "state": "KS", "display_address": ["2300 Woodland
+        Ave", "Coffeyville, KS 67337"]}, "phone": "+16202516680", "display_phone":
+        "(620) 251-6680", "distance": 2695.6879514485927}, {"id": "VqH50nwrfYbRoAoZagmbag",
+        "alias": "miss-kate-s-mercantile-coffeyville-2", "name": "Miss Kate\u2019s
+        Mercantile", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/uhbUcxsLzHcUP44Cfad_rA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/miss-kate-s-mercantile-coffeyville-2?adjust_creative=2viZ_G1-JEyYqEZWrWWfDQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2viZ_G1-JEyYqEZWrWWfDQ",
+        "review_count": 1, "categories": [{"alias": "diners", "title": "Diners"},
+        {"alias": "accessories", "title": "Accessories"}, {"alias": "menscloth", "title":
+        "Men''s Clothing"}], "rating": 5.0, "coordinates": {"latitude": 37.0248534,
+        "longitude": -95.6160631}, "transactions": [], "location": {"address1": "1602
+        S Walnut St", "address2": null, "address3": "", "city": "Coffeyville", "zip_code":
+        "67337", "country": "US", "state": "KS", "display_address": ["1602 S Walnut
+        St", "Coffeyville, KS 67337"]}, "phone": "+16206052083", "display_phone":
+        "(620) 605-2083", "distance": 1521.7741369835294}], "total": 29, "region":
+        {"center": {"longitude": -95.6301498413086, "latitude": 37.03269542117694}}}'
+  recorded_at: Mon, 10 Jan 2022 01:45:45 GMT
+recorded_with: VCR 6.0.0
