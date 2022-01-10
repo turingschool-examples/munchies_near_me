@@ -1,0 +1,8 @@
+<h1>Search Index</h1>
+<% @restaraunts.each do |r| %>
+<h3><%= r.name %></h3>
+<p>Phone: <%= r.phone %><br>
+Yelp Rating: <%= r.rating%><br>
+Address: <%= r.address %><br>
+Distance from me: <%= r.distance %><br>
+<% end %>

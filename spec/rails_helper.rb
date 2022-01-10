@@ -62,3 +62,31 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+def restaurant_data
+{:id=>"TNF_Au6V4Rc5LvFcmARCsg",
+ :alias=>"pierogies-factory-wheat-ridge",
+ :name=>"Pierogies Factory",
+ :image_url=>"https://s3-media1.fl.yelpcdn.com/bphoto/GSBXQ4VTvLDHw5XKmaFVow/o.jpg",
+ :is_closed=>false,
+ :url=>
+  "https://www.yelp.com/biz/pierogies-factory-wheat-ridge?adjust_creative=xWBr6htHXhPwhK_rHoGlGQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xWBr6htHXhPwhK_rHoGlGQ",
+ :review_count=>414,
+ :categories=>[{:alias=>"polish", :title=>"Polish"}],
+ :rating=>4.5,
+ :coordinates=>{:latitude=>39.769061, :longitude=>-105.081843},
+ :transactions=>["pickup", "delivery"],
+ :price=>"$",
+ :location=>
+  {:address1=>"3795 Wadsworth Blvd",
+   :address2=>"",
+   :address3=>"",
+   :city=>"Wheat Ridge",
+   :zip_code=>"80033",
+   :country=>"US",
+   :state=>"CO",
+   :display_address=>["3795 Wadsworth Blvd", "Wheat Ridge, CO 80033"]},
+ :phone=>"+13034257421",
+ :display_phone=>"(303) 425-7421",
+ :distance=>1776.8293251842588}
+end
