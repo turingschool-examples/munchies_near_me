@@ -1,0 +1,9 @@
+<h1>Search results</h1>
+
+<% @results.each do |result| %>
+  <p><b>Name: <%= result.name %></b></p>
+  <p>Phone Number: <%= result.phone_number %></p>
+  <p>Address: <%= result.full_address %></p>
+  <p>Rating: <%= result.rating %></p>
+  <p>Distance (miles): <%= result.distance %></p>
+<% end %>
