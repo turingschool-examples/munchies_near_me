@@ -4,7 +4,7 @@ class SearchFacade
       YelpService.business_search(location, category)[:businesses]
     end
 
-    def rest_hash(location, category)
+    def find_restaurants_via_yelp_mq(location, category)
       yelp_restaurants = find_locations(location, category)
       yelp_restaurants.map do |restaurant|
         {
@@ -18,10 +18,11 @@ class SearchFacade
     end
 
     def restaurants(location, category)
-      all_restaurants = rest_hash(location, category)
-      all_restaurants.map do |info|
+      all_restaurants = find_restaurants_via_yelp_mq(location, category)
+      restaurant = all_restaurants.map do |info|
         Restaurant.new(info)
       end
+      restaurant.sort_by(&:distance)
     end
   end
 end
