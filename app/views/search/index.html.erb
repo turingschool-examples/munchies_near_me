@@ -1,0 +1,8 @@
+Results from your search will appear below! <br>
+<% @restaurants.each do |restaurant| %>
+  <b><%= restaurant.name %></b>
+  Phone: <%= restaurant.phone %>
+  Rating: <%= restaurant.rating %>
+  Address: <%= restaurant.address %>
+  Distance: <%= restaurant.distance %> miles<br>
+<% end %>
