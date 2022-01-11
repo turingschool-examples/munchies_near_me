@@ -55,23 +55,23 @@ RSpec.describe 'Search Facade' do
     category = "thai"
 
     all_restaurants = SearchFacade.find_restaurants_via_yelp_mq(location, category)
-    
+
     expect(all_restaurants).to be_an Array
     expect(all_restaurants.first).to be_a Hash
 
-    expect(all_restaurants.first).to have_key[:name]
+    expect(all_restaurants.first).to have_key :name
     expect(all_restaurants.first[:name]).to be_a String
 
-    expect(all_restaurants.first).to have_key[:rating]
+    expect(all_restaurants.first).to have_key :rating
     expect(all_restaurants.first[:rating]).to be_a Float
 
-    expect(all_restaurants.first).to have_key[:display_phone]
+    expect(all_restaurants.first).to have_key :display_phone
     expect(all_restaurants.first[:display_phone]).to be_a String
 
-    expect(all_restaurants.first).to have_key[:display_address]
+    expect(all_restaurants.first).to have_key :display_address
     expect(all_restaurants.first[:display_address]).to be_an Array
 
-    expect(all_restaurants.first).to have_key[:mq_distance]
+    expect(all_restaurants.first).to have_key :mq_distance
     expect(all_restaurants.first[:mq_distance]).to be_a Float
   end
 end

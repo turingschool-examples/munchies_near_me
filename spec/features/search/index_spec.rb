@@ -9,21 +9,19 @@ RSpec.describe 'Restaurant Search' do
   end
 
   it 'redirects to results page' do
-    require "pry"; binding.pry
     expect(current_path).to eq(search_path)
+
     expect(page).to have_content("Results from your search will appear below!")
   end
 
-  it 'lists 15 thai restaurants in order from closest to farthest from inputted city' do
-    # expect(page).to have_content("")
+  it 'lists details for 15 thai restaurants in order from closest to farthest from inputted city' do
+    expect(page).to have_content("Phone:", count: 15)
+    expect(page).to have_content("Rating:", count: 15)
+    expect(page).to have_content("Address:", count: 15)
+    expect(page).to have_content("Distance:", count: 15)
+    expect(page).to have_content("miles", count: 15)
+    expect(page).to have_content("Address: 406 E Colfax Ave, Denver, CO 80203")
+
+    expect("Distance: 0.26 miles").to appear_before("Distance: 37.618 miles", only_text: true)
   end
 end
-# As a visitor
-# When I visit “/“
-# And fill in the existing form with a city (ex: “Denver, CO”)
-# and my food craving (ex: thai, american, bar, chinese, etc.) and hit submit,
-# I’m taken to a page where I can see a list of the 15 closest restuarants
-# for that craving in that city.
-# And each restaurant lists their name, phone number, rating, human readable address,
-# and the distance it is from that city.
-# And the restaurants are listed in order of proximity (closest to furthest)
