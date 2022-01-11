@@ -4,6 +4,7 @@ RSpec.describe 'Yelp business search API' do
   it 'returns businesses' do
     location = "denver, co"
     category = "thai"
+
     response = YelpService.business_search(location, category)
 
     expect(response).to be_a Hash
