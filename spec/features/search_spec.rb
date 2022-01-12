@@ -1,7 +1,8 @@
 require 'rails_helper'
 
- RSpec.describe 'search' do
+ RSpec.describe 'search', :vcr do
    it "visitor can search for 15 closest restaurants near there city that match there craving" do
+     restaurants = YelpFacade.yelp_search("Denver, CO","chinese")
      # #As a visitor
      # When I visit “/“
      # And fill in the existing form with a city (ex: “Denver, CO”) and my food craving (ex: thai, american, bar, chinese, etc.) and hit submit,
@@ -15,6 +16,13 @@ require 'rails_helper'
 
      click_on 'Search For Restaurants'
 
+     expect(current_path).to eq(search_path)
+     expect(restaurants.count).to eq(15)
 
+     # expect(page).to have_content(restaurants[0].name)
+     # expect(page).to have_content(restaurants[0].rating)
+     # expect(page).to have_content(restaurants[0].phone_number)
+     # expect(page).to have_content(restaurants[0].address)
+     # expect(page).to have_content(restaurants[0].distance)
    end
  end

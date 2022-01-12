@@ -4,7 +4,7 @@ require 'rails_helper'
    it "creates yelp objects" do
      restaurants = YelpFacade.yelp_search("Denver, CO", "Chinese")
      restaurants.each do |restaurant|
-       expect(restaurant).to be_a(Restaurant)
+       expect(restaurant).to be_a(Yelp)
      end
    end
  end

@@ -1,10 +1,13 @@
 class YelpFacade
   def self.yelp_search(location, craving)
     payload = YelpService.get_service(location, craving)
-    payload[:businesses].map do |data|
+    restaurants = payload[:businesses].map do |data|
       map_data = MapQuestService.get_service(location, data[:location][:address1])
       distance = map_data[:route][:distance]
       Yelp.new(data, distance)
+    end
+    restaurants.sort_by do |restaurant|
+      restaurant.distance
     end
   end
 end
